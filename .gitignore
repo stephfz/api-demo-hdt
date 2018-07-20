@@ -1,0 +1,4 @@
+*.pyc
+/test_structure/*.pyc
+*.xml
+config.py
