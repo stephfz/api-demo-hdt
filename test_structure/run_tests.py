@@ -66,7 +66,7 @@ def build_report():
 def main():
     module = sys.argv[1]
     print module
-    testsuite = 'test_structure/{1}.py'.format(cwd,module)
+    testsuite = '{1}.py'.format(cwd,module)
     nose.run(argv=['', testsuite, '--with-xunit','--xunit-file={0}'.format(report_path)])
     build_report()
 
